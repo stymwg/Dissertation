@@ -20,7 +20,7 @@ cn.mopsVersion <- packageDescription("cn.mops")$Version
 setwd("D:/alldips1tet") #working directory containing all diploid bams. For tetraploid analysis, one tetraploid is also present in this directory.
 BAMFiles <- list.files(pattern=".bam$") #Creates list of bam files in the directory. Needs multiple BAM files
 bamDataRanges <- getReadCountsFromBAM(BAMFiles, refSeqNames="scaffold_7", WL=2000) #identifies normalized read count changes in 2000+ base windows
-res <- cn.mops(bamDataRanges,lowerThreshold = -0.1) #change lower threshold to reflect ploidy
+res <- cn.mops(bamDataRanges,lowerThreshold = -0.2) #change lower threshold to reflect ploidy
 res
 resCNMOPS <- calcIntegerCopyNumbers(res) #calculates copy number changes in each identified coverage drop
 resCNMOPS
