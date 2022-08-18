@@ -13,7 +13,7 @@ dip$middle <- dip$start + (dip$end - dip$start)
 tet$ploidy <- 'tetraploid'
 dip$ploidy <- 'diploid'
 tet$chromno <- 1
-dip$chromno <- 1.7 #CHROMOSOME NUMBER NoRMALISATION
+dip$chromno <- 1.7 #CHROMOSOME NUMBER NORMALISATION
 both <- rbind(tet,dip)
 
 f <- ggplot(both, aes(y=start)) + geom_linerange(aes(xmin=start,xmax=end),linetype=1,color="black") + geom_point(aes(x = start, color=ploidy, size = (end-start))) + geom_point(aes(x=end, color=ploidy, size = (end-start), alpha = mean))
