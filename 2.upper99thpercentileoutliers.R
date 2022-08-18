@@ -1,4 +1,4 @@
-##By Matthew Gaskins. Last edited 17/08/22.
+##By Matthew Gaskins. Last edited 17/08/22. Extracts top 1% of outliers from ScanTools-generated list of windows.
 setwd("D:/") #sets working directory containing list of windows 
 all <- read_excel("allscaffolds.xlsx") #Manual Input - requires VCF of biallelic SNPs
 new_df <- subset(all, Fst_WC<1 & Fst_WC>0) #subsets all FST values between 0 and 1
