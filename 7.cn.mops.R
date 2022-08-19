@@ -33,6 +33,6 @@ print(resCNMOPS)
 
 results.CNVs  <- as.data.frame(cnvs(resCNMOPS)) #converts identified copy number changes to a data frame
 library("writexl")
-write_xlsx(results.CNVs,"scaffold7_WL500.xlsx") #writes candidate CNVs to an excel file
+write_xlsx(results.CNVs,"scaffold7_26_4.xlsx") #writes candidate CNVs to an excel file
 
 
